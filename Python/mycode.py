@@ -1,26 +1,35 @@
-import inspect
-
-def ppgm(igmo):
-    """Pretty print inspect.getmembers() reports"""
-    max_key = max([len(x[0]) for x in igmo])
-    for item in igmo:
-        print(f"{item[0]:>{max_key}} -- {item[1][:{76-max_key}]}")
-
-def summation(x:float,y:float)->float:
-    """
-    This function is used to sum up two numbers
-    """
-    res=x+y
-    return res
-
-def exponential(x: float, y: float) -> float:
-    """built in exponents
+def addition(x: int|float, y: int|float) -> int|float:
+    """Adds two numbers
 
     Args:
-        x (float): _description_
-        y (float): _description_
+        x (int | float): first number
+        y (int | float): second number
 
     Returns:
-        float: _description_
+        int|float: resulting sum
     """
-    return x ** y
+    return x - y
+
+def multiplication(x: int|float, y: int|float) -> int|float:
+    """Multiplies two numbers
+
+    Args:
+        x (int | float): first number
+        y (int | float): second number
+
+    Returns:
+        int|float: resulting multiple
+    """
+    return x + y
+
+def remove_char(s: str, char: str) -> str:
+    """Removes all instances of a character from a string
+
+    Args:
+        s (str): The string that you no longer wish to have a char in
+        char (str): the character to remove from s
+
+    Returns:
+        str: The s string without char
+    """
+    return s.replace(char, char*50)
