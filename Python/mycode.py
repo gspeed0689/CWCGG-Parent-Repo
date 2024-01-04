@@ -12,3 +12,15 @@ def summation(x:float,y:float)->float:
     """
     res=x+y
     return res
+
+def exponential(x: float, y: float) -> float:
+    """built in exponents
+
+    Args:
+        x (float): _description_
+        y (float): _description_
+
+    Returns:
+        float: _description_
+    """
+    return x ** y
