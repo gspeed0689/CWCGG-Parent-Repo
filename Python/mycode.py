@@ -6,3 +6,9 @@ def ppgm(igmo):
     for item in igmo:
         print(f"{item[0]:>{max_key}} -- {item[1][:{76-max_key}]}")
 
+def summation(x:float,y:float)->float:
+    """
+    This function is used to sum up two numbers
+    """
+    res=x+y
+    return res
